@@ -20,5 +20,4 @@ public class main {
         pe2.mostrarDetalles();
 
     }
-
 }
