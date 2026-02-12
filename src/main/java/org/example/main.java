@@ -7,12 +7,17 @@ public class main {
         producto p2 = new producto("pera", "1020", "3.000");
         producto p3 = new producto("piña", "1030", "4.000");
 
-        Pedido pe1 = new Pedido(1,"persona 1");
-        Pedido pe2 = new Pedido(2,"persona 2");
+        Pedido pe1 = new Pedido(1, "persona 1");
+        Pedido pe2 = new Pedido(2, "persona 2");
 
-        System.out.println(pe2);
-        System.out.println(p3);
+        pe1.agregarProducto(p1);
+        pe1.agregarProducto(p2);
+        pe2.agregarProducto(p3);
+        pe2.agregarProducto(p1);
 
+        pe1.mostrarDetalles();
+        System.out.println();
+        pe2.mostrarDetalles();
 
     }
 
